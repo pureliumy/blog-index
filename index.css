@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.life,
+.code {
+    flex-basis: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.life {
+    background-image: url(./widget/life/bg_small_life.png);
+}
+
+.code {
+    background-image: url(./widget/code/bg_small_code.png);
+}
+
+.bg-box {
+    flex: none;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.code-bg {
+    width: 380px;
+    height: 140px;
+    background-image: url(./widget/code/code_normal.png);
+}
+
+.life-bg {
+    width: 334px;
+    height: 111px;
+    background-image: url(./widget/life/life_normal.png);
+}
+
+.code-bg:hover {
+    width: 340px;
+    height: 140px;
+    background-image: url(./widget/code/code_hover.png);
+}
+
+.life-bg:hover {
+    width: 411px;
+    height: 118px;
+    background-image: url(./widget/life/life_hover.png);
+}
