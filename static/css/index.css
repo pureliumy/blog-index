@@ -23,11 +23,11 @@ body {
 }
 
 .life {
-    background-image: url(./widget/life/bg_small_life.png);
+    background: url(../images/life/bg_small_life.png) repeat left top;
 }
 
 .code {
-    background-image: url(./widget/code/bg_small_code.png);
+    background: url(../images/code/bg_small_code.png) repeat left top;
 }
 
 .bg-box {
@@ -39,23 +39,23 @@ body {
 .code-bg {
     width: 380px;
     height: 140px;
-    background-image: url(./widget/code/code_normal.png);
+    background-image: url(../images/code/code_normal.png?__sprite);
 }
 
 .life-bg {
     width: 334px;
     height: 111px;
-    background-image: url(./widget/life/life_normal.png);
+    background-image: url(../images/life/life_normal.png?__sprite);
 }
 
 .code-bg:hover {
     width: 340px;
     height: 140px;
-    background-image: url(./widget/code/code_hover.png);
+    background-image: url(../images/code/code_hover.png?__sprite);
 }
 
 .life-bg:hover {
     width: 411px;
     height: 118px;
-    background-image: url(./widget/life/life_hover.png);
+    background-image: url(../images/life/life_hover.png?__sprite);
 }

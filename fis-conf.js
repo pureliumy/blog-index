@@ -1,37 +1,64 @@
 /**
  * Created by Administrator on 2016/10/23 0023.
  */
-// 所有的文件产出到 static/ 目录下
-fis.match('*.png', {
-    release: '/static/img/$0'
-});
-fis.match('*.psd',{
-    release: "false"
+fis.match('{/design/**,/**.md}',{
+    release: false
 });
 
-// optimize
-fis.media('prod')
-    .match('*.css', {
-        optimizer: fis.plugin('clean-css', {
-            'keepBreaks': true //保持一个规则一个换行
-        })
-    });
+fis.match('**', {
+  deploy: [
+    fis.plugin('skip-packed', {
+      // 配置项
+      skipPackedToPkg:  true,
+      skipPackedToAIO: true,
+      skipPackedToCssSprite: true,
+    }),
 
-// pack
-fis.media('prod')
-// 启用打包插件，必须匹配 ::package
-    .match('::package', {
-        packager: fis.plugin('map'),
-        spriter: fis.plugin('csssprites', {
-            layout: 'matrix',
-            margin: '15'
-        })
+    fis.plugin('local-deliver', {
+      to: './output'
     })
-    .match('*.css', {
-        packTo: '/staitc/css/home.css'
-    });
+  ]
+});
 
-fis.set('project.ignore', [
-    'output/**',
-    '.git/**',
-]);
+fis.match('*.png', {
+  optimizer: fis.plugin('png-compressor')
+});
+
+fis.match('*.{js,css,png}', {
+  useHash: true
+});
+
+fis.match('::package', {
+  spriter: fis.plugin('csssprites')
+});
+
+fis.match('*.js', {
+  optimizer: fis.plugin('uglify-js')
+});
+
+fis.match('::package', {
+  postpackager: fis.plugin('loader')
+});
+
+fis.match('/static/**.css',{
+    packTo: '/static/css/home.css'
+});
+
+fis.match('*.{css,less,scss}', {
+  preprocessor: fis.plugin('autoprefixer', {
+    "browsers": ["Android >= 2.1", "iOS >= 4", "ie >= 8", "firefox >= 15"],
+    "cascade": true
+  })
+});
+
+fis.match('/**.css', {
+  optimizer: fis.plugin('clean-css')
+});
+
+fis.match('::package', {
+    deploy: [
+        fis.match('/**.png',{
+            release: '/static/img/home.png'
+        })
+    ]
+});
