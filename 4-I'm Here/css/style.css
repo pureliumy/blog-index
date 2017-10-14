@@ -1,0 +1,244 @@
+*{margin:0;padding:0;}
+body{
+    background:url(../img/background.png) repeat ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color:#999;
+}
+.container{
+    margin:70px auto 30px auto;
+    width:780px;
+}
+/* 开始侧边栏 */
+.side_container{
+    float: left;
+    width:230px;
+}
+.head_img{
+    margin-bottom:65px;
+}
+.head_name{
+    background:#CD5353;
+    padding-top: 10px;
+    padding-left: 3px;
+    width: 215px;
+    height: 70px;
+    position: absolute;
+    top: 270px;
+    color: white;
+    border-radius:0 0 4px 4px;
+    -moz-border-radius:0 0 4px 4px;
+    -webkit-border-radius:0 0 4px 4px;
+}
+.side_nav li{
+    line-height: 40px;
+    display:inline-block;
+}
+.side_nav a{
+    display: block;
+    width: 213px;
+    margin-bottom: 5px;
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:300;
+    font-size:17px;
+    color:#787878;
+    border-right: 5px solid #e3e2e2;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+.side_nav a:hover{
+    background: #ffffff;
+    border-right: 5px solid #CD5353;
+    color: #CD5353;
+}
+/* 当前页面对应链接样式 */
+#a_now{
+    background: #ffffff;
+    border-right: 5px solid #CD5353;
+    color: #CD5353;
+}
+#a_now .icon_about{background: url(../img/about-ico-active.png) no-repeat;}
+#a_now .icon_blog{background: url(../img/blog-ico-active.png) no-repeat;}
+#a_now .icon_photograph{background: url(../img/photograph-ico-active.png) no-repeat}
+#a_now .icon_contact{background: url(../img/contact-ico-active.png) no-repeat}
+/* 图标 */
+.side_nav_icon{
+    padding: 3px 120px 5px 5px;
+    margin-left: 15px;
+}
+.icon_about{background: url(../img/about-ico.png) no-repeat;}
+.icon_blog{background: url(../img/blog-ico.png) no-repeat;}
+.icon_contact{background: url(../img/contact-ico.png) no-repeat;}
+.icon_photograph{background: url(../img/photograph-ico.png) no-repeat;}
+.side_nav a:hover .icon_about{background: url(../img/about-ico-active.png) no-repeat;}
+.side_nav a:hover .icon_blog{background: url(../img/blog-ico-active.png) no-repeat;}
+.side_nav a:hover .icon_photograph{background: url(../img/photograph-ico-active.png) no-repeat}
+.side_nav a:hover .icon_contact{background: url(../img/contact-ico-active.png) no-repeat}
+/* 侧边栏结束 */
+
+.content{
+    background: #ffffff;
+    margin-bottom: 10px;
+    margin-right: 18px;
+    padding: 20px 30px 15px 30px;
+    float: right;
+    width: 470px;
+    border-top:4px solid #e3e2e2;
+    border-bottom: 4px solid #e3e2e2;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    font-size: 14px;
+}
+
+/* 开始关于 */
+.content h1{
+    font-size: 16px;
+    color: #CD5353;
+    margin-bottom:10px;
+}
+.content p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.content ul{margin-bottom: 30px;}
+.content ul li{
+    list-style: none;
+    color: #666666;
+    background: #f5f5f5;
+    padding:10px;
+    border-left: 4px solid #CD5353;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+.content hr{
+    border: 1px dashed #999;
+    margin-bottom: 15px;
+}
+.skills ul{margin-bottom: 10px;}
+.skills ul li span{
+    display: block;
+    float: right;
+    width: 113px;
+    height: 17px;
+    margin-right: 200px;
+}
+.skills ul li span.r1{background: url(../img/rating-sprite.png) no-repeat scroll 0 -56px}
+.skills ul li span.r2{background: url(../img/rating-sprite.png) no-repeat scroll 0 -76px}
+.skills ul li span.r3{background: url(../img/rating-sprite.png) no-repeat scroll 0 -36px}
+.skills ul li span.r4{background: url(../img/rating-sprite.png) no-repeat scroll 0 -56px}
+.skills ul li span.r5{background: url(../img/rating-sprite.png) no-repeat scroll 0 -76px}
+
+/* 开始博客 */
+ul.article{
+    margin-bottom: -5px;
+
+}
+ul.article li{
+    width: 450px;
+    height: 123px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-left: 4px solid #e3e2e2;
+    color: #999;
+}
+ul.article li:hover{
+    background: #F8FCFE;
+    border-left: 4px solid #CD5353;
+}
+ul.article h2 a{text-decoration: none;}
+ul.article h2 a:visited{
+    text-decoration: none;
+    color: #428BCA;
+}
+.article_tip span{
+    display: block;
+    line-height: 17px;
+    float: left;
+    height: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
+    margin: 8px 5px -7px 0;
+}
+.clear{clear:both;}
+
+.author{background: url(../img/whois-ico.png) no-repeat;}
+.comment{background: url(../img/comment-ico.png) no-repeat;}
+.date{background: url(../img/date-ico.png) no-repeat;}
+
+.content h2{color:#428BCA;}
+.content h3{
+    color:#428BCA;
+    border-left: 3px solid #CD5353;
+    padding-left: 10px;
+}
+.article_content{color: #666666}
+
+/* 开始摄影 */
+.photo ul{margin-right: -20px;}
+.photo ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    width: 200px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+}
+.photo ul li img{
+    width: 200px;
+    height: 133px;
+}
+
+/* 开始联系 */
+.contact_head p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contact_head img{
+    display: block;
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    margin: 15px auto 0 auto;
+}
+/* 开始底部 */
+.footer p{
+    color:#ccc;
+    font-size:12px;
+    margin-left: 380px;
+}
+ul.socials{
+    height: 62px;
+    margin-left: 410px;
+    width: 200px;
+    margin-top:5px;
+}
+ul.socials li{
+    display:inline-block;
+    width:31px;
+    height:31px;
+    padding-left:5px;
+}
+ul.socials li.fb{background: url(../img/social-sprite.png) no-repeat 0 0;}
+ul.socials li.tw{background: url(../img/social-sprite.png) no-repeat -36px 0;}
+ul.socials li.li{background: url(../img/social-sprite.png) no-repeat -72px 0;}
+ul.socials li.vm{background: url(../img/social-sprite.png) no-repeat -108px 0;}
+
+ul.socials li.fb , ul.socials li.tw , ul.socials li.li, ul.socials  li.vm{
+    -webkit-transition: background-position .3s ease-in-out;
+    -moz-transition: background-position .3s ease-in-out;
+    -o-transition: background-position .3s ease-in-out;
+    transition: background-position .3s ease-in-out;
+}
+ul.socials  li.fb:hover{background: url(../img/social-sprite.png) no-repeat 0 -31px;}
+ul.socials  li.tw:hover{background: url(../img/social-sprite.png) no-repeat -36px -31px;}
+ul.socials  li.li:hover{background: url(../img/social-sprite.png) no-repeat -72px -31px;}
+ul.socials  li.vm:hover{background: url(../img/social-sprite.png) no-repeat -108px -31px;}
+/* 结束 */
