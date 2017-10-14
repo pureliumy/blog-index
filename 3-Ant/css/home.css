@@ -1,0 +1,117 @@
+/*iconfont*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1450449563_844303.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1450449563_844303.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1450449563_844303.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1450449563_844303.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1450449563_844303.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+	font-family:"iconfont";
+	font-size: 3rem;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	-webkit-text-stroke-width: 0.2px;
+}
+
+html,body,nav,ul,li,a,div,i,footer,section,p{margin: 0;padding: 0;}
+html{
+	font-family: "微软雅黑",sans-serif;
+	font-size: 62.5%;  /*设置rem单位的根的大小为10px*/
+}
+body{
+	font-size: 1.4rem;
+	color: #fff;
+	background-color: #2B2B2B;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*左边导航*/
+nav ul{
+	list-style: none;
+	float: left;
+	margin-top: 50px;
+	margin-left: 30px;
+	font-size: 1.8rem;
+}
+nav ul li{
+	padding: 0 20px;
+}
+nav ul li a{
+	color: #656565;
+}
+nav ul li a:hover,nav ul li a:active{
+	color: inherit;
+}
+.active{
+	color: #fff;
+}
+
+/*右边分享图标*/
+.share ul{
+	list-style: none;
+	float: right;
+	margin-right: 30px;
+	margin-top: 50px;
+}
+.share ul li{
+	float: left;
+	padding: 0 5px;
+}
+.share ul li a i{
+	font-size: 2rem;
+}
+
+/*logo文字*/
+.clear-fix{
+	clear: both;
+}
+.logo i{
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	top: 20rem;
+	width: 10rem;
+	height: 10rem;
+	display: block;
+	font-size: 10em;
+	text-align: center;
+}
+
+/*底部信息*/
+footer{
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	margin-left: -280px;
+}
+footer section{
+	float: left;
+	margin-left: 30px;
+	padding: 10px;
+	color: #6C6C6C;
+}
+.info strong{
+	color: #fff;
+}
+footer section:first-child{
+	margin-left: 0;
+}
+.location i,.email i{
+	font-size: 2.0rem;
+	float: left;
+	display: block;
+	margin-right: 7px;
+	color: #fff;
+}
+.email i{
+	font-size: 1.7rem;
+}
+.beside-icon{
+	float: left;
+}
